@@ -18,10 +18,14 @@ public class Program {
 		System.out.println(seller);
 
 		List<Seller> list = sellerdao.findByDepartment(new Department(2, null));
-		System.out.println("\n === TEST 1: Seller findByDepartment === ");
+		System.out.println("\n === TEST 2: Seller findByDepartment === ");
 		for (Seller obj : list)
 		System.out.println(obj);
 
+		list = sellerdao.findAll();
+		System.out.println("\n === TEST 3: Seller findAll === ");
+		for (Seller obj : list)
+		System.out.println(obj);
 	}
 
 }
